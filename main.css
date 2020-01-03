@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    width: 1920px;
-    height: 1352px;
+    width: 1900px;
+    height: 1400px;
+    background-color: #f6f7fa;
 }
 
 .header{
@@ -99,7 +100,7 @@ body {
 
 .content{
     width: 1400px;
-    height: 780px;
+    height: 1200px;
     border: 0px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
     position: absolute;
@@ -258,4 +259,112 @@ body {
     top: -160px;
     margin-left: 43px;
     margin-right: 18px;
+}
+
+
+.vector ul{
+    display: inline;
+}
+
+.vector ul li{
+    list-style-type: none;
+    margin-bottom: 80px;
+}
+
+.users table{
+    height: 37px;
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 14.4px;
+    margin-left: 43px;
+}
+
+table{
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    border-collapse: collapse;
+    left: 20px;
+
+}
+table tr{
+    margin: 30px;
+}
+table th{
+    color: #8492af;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 14.4px;
+    height: 80px;
+}
+
+table td{
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 16.86px;
+    background-color: white;
+    margin: 0px;
+    height: 100px;
+    position: relative;
+	text-align: center;
+}
+
+table td#isim{
+    text-align: left;
+}
+
+table td#online{
+    color: yellowgreen;
+}
+
+table td#offline{
+    color: #8492af;
+}
+
+table td img{
+    float: left;
+}
+
+table tr td li{
+    margin: 35px;
+    
+}
+
+.pagination a {
+    color: black;
+    float: center;
+    padding: 17px 13px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .pagination a.active {
+    color: #5584ff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .pagination a#wp {
+    color: #5584ff;
+    font-size: 30px;
+    font-weight: 1000;
+    border: 0px;
+  }
+footer{
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    border-collapse: collapse;
+    bottom: 40px;
+
 }
