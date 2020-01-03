@@ -18,7 +18,7 @@ body {
 
 .side-menu{
     width: 318px;
-    height: 900px;
+    height: 1320px;
     background-color: #0e1a35;
     position: absolute;
     top: 0;
@@ -315,12 +315,19 @@ table td{
 	text-align: center;
 }
 
+table td span{
+    color: #8492af;
+    position: absolute;
+    top: 25px;
+    right: 135px;
+}
+
 table td#isim{
     text-align: left;
 }
 
 table td#online{
-    color: yellowgreen;
+    color: #00bf1b;
 }
 
 table td#offline{
