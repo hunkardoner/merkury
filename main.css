@@ -379,3 +379,31 @@ footer{
     bottom: 40px;
 
 }
+
+.workflow{
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;;
+}
+
+.workflow h1 span{
+    color: grey;
+}
+
+.work-box  {
+    width: 400px;
+    height: 118px;
+    background: white;
+    margin: 20px 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.work-text{
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
