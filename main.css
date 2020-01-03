@@ -338,6 +338,10 @@ table td img{
     float: left;
 }
 
+table td i{
+    margin: 0 10px;
+}
+
 table tr td li{
     margin: 35px;
     
