@@ -11,6 +11,11 @@ body {
     background: lightblue url("bg.jpg") center;
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+}
+
 .container{
     width: 1219px;
     height: 850px;
