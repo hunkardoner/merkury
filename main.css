@@ -322,8 +322,15 @@ table td span{
     left: 170px;
 }
 
-table td#isim{
-    text-align: left;
+.username{
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 14.4px;
+    position: absolute;
+    top: 50px;
+    left: 170px;
 }
 
 table td#online{
@@ -395,7 +402,7 @@ footer{
     height: 118px;
     background: white;
     margin: 20px 30px;
-    border: 1px solid black;
+    border: 1px solid rgba(132, 146, 175, 0.3);
     box-sizing: border-box;
     position: relative;
     padding-bottom: 5px;
@@ -404,6 +411,65 @@ footer{
 .work-text{
     float: left;
     position: absolute;
-    top: 20px;
-    left: 70px;
+    top: 25px;
+    left: 75px;
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21.07px;
+}
+
+.work-time{
+    padding-top: 10px;
+    color: #8492af;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.86px;
+}
+
+.work-circle{
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 47px;
+    height: 47px;
+    background-color: #5584ff;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-transform: uppercase;
+    float:left;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 25px;
+    }   
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    text-align: left;
+    margin-left: 30px;
+    position: relative;
+}
+  
+.flex-container > div {
+    background-color: #ffffff;
+    width: 272px;
+    height: 138px;
+    line-height: 75px;
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    padding-left: 30px;
+}
+
+.flex-container > div.active{
+    width: 210px;
+    height: 46px;
 }
