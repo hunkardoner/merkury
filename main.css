@@ -524,7 +524,22 @@ footer{
     padding-left: 30px;
 }
 
-.flex-container > div.active{
-    width: 210px;
-    height: 46px;
+.active-red{
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #f6f7fa;
+    margin-top: 33px;
+}
+
+.active-blue{
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #f6f7fa;
+    margin-top: -60px;
 }
