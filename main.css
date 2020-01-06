@@ -8,7 +8,6 @@ body {
 }
 
 .header{
-    border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
 }
 
@@ -38,10 +37,6 @@ body {
     margin: 0;
     padding-bottom: 36px;
     transition: all;
-}
-
-.side-menu ul li:hover{
-    background-color: #122143; 
 }
 
 .side-menu ul li a{
@@ -102,7 +97,6 @@ body {
     width: 1400px;
     height: 1200px;
     border: 0px solid rgba(132, 146, 175, 0.3);
-    background-color: #ffffff;
     position: absolute;
     left: 320px;
     top: 121px;
@@ -142,7 +136,7 @@ body {
 
 .box#right-box  {
     top: -180px;
-    width: 53% ;
+    width: 52% ;
     height: 469px;
     border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
@@ -152,12 +146,54 @@ body {
     box-sizing: border-box;
 }
 
+.bottom-box{
+    height: 464px;
+    width: 95%;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: -1333px;
+}
+
+.box img{
+    position: absolute;
+    top: 0px;
+}
+
+.sol-resim{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+
+.edit{
+    border-radius: 50px;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    padding: 12px;
+    position: absolute;
+    right: 110px;
+    top: 25px;
+    color: #8492af;
+
+}
+.edit2{
+    border-radius: 50px;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    padding: 12px;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    color: #8492af;
+
+}
+
 .period{
     border-radius: 24px;
     border: 1px solid rgba(132, 146, 175, 0.3);
     padding: 17px 75px 19px 23px;
     position: absolute;
-    right: 5px;
+    right: 25px;
     top: 25px;
     color: #0e1a35;
     font-family: Roboto;
@@ -251,7 +287,7 @@ body {
 .vector{
     box-sizing: border-box;
     width: 403px;
-    height: 500px;
+    height: 560px;
     border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
     display: inline-block;
@@ -261,14 +297,30 @@ body {
     margin-right: 18px;
 }
 
+.vector #active{
+    background: #dadee7;
+}
 
 .vector ul{
     display: inline;
 }
 
+.vector h2{
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-left: 34px;
+}
+
 .vector ul li{
     list-style-type: none;
     margin-bottom: 80px;
+    background: white;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    box-sizing: border-box;
+    position: relative;
 }
 
 .users table{
@@ -393,6 +445,9 @@ footer{
     position: relative;;
 }
 
+.workflow h1{
+    margin-top: 50px;
+}
 .workflow h1 span{
     color: grey;
 }
