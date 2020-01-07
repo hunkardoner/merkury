@@ -522,6 +522,7 @@ footer{
     font-weight: 400;
     border: 1px solid rgba(132, 146, 175, 0.3);
     padding-left: 30px;
+    position: relative;
 }
 
 .active-red{
@@ -532,6 +533,11 @@ footer{
     line-height: 30px;
     background-color: #f6f7fa;
     margin-top: 33px;
+    border-left: 5px solid blue;
+    padding: 0 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .active-blue{
@@ -541,5 +547,40 @@ footer{
     font-weight: 400;
     line-height: 30px;
     background-color: #f6f7fa;
-    margin-top: -60px;
+    margin-top: 3px;
+    border-left: 5px solid red;
+    padding: 0 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 302px;
+    height: 399px;
+    background-color: #ffffff;
+    color: #0e1a35;
+    font-family: Roboto;
+    text-align: center;
+    border-radius: 1px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+    left: 200px;
+    border: 1px solid gray;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
