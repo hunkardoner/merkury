@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     width: 1900px;
     height: 1400px;
     background-color: #f6f7fa;
@@ -17,7 +17,7 @@ body {
 
 .side-menu{
     width: 318px;
-    height: 1320px;
+    height: 1321px;
     background-color: #0e1a35;
     position: absolute;
     top: 0;
@@ -34,8 +34,7 @@ body {
 
 .side-menu ul li{
     list-style-type: none;
-    margin: 0;
-    padding-bottom: 36px;
+    margin: 36px;
     transition: all;
 }
 
@@ -54,11 +53,6 @@ body {
 }
 
 
-
-.side-menu ul li a:hover{
-    background-color: #122143;
-}
-
 .side-menu ul li img{
     margin: -20px -20px;
     padding: -100px -10px;
@@ -67,10 +61,11 @@ body {
 .top-menu{
     width: 1400px;
     height: 120px;
-    border: 2px solid rgba(132, 146, 175, 0.3);
+    border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
     position: absolute;
-    left: 318px;
+    left: 320px;
+    border-left: 0;
 }
 
 .top-menu ul li{
@@ -96,20 +91,23 @@ body {
 .content{
     width: 1400px;
     height: 1200px;
-    border: 0px solid rgba(132, 146, 175, 0.3);
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    border-top: 0;
     position: absolute;
     left: 320px;
     top: 121px;
+    border-left: 0;
 }
 
 .content h1{
     height: 37px;
     color: #0e1a35;
     font-family: Roboto;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 500;
     line-height: 14.4px;
     margin-left: 43px;
+    margin-top: 50px;
 }
 
 .box h2{
