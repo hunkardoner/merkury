@@ -369,7 +369,7 @@ table td span{
     color: #8492af;
     position: absolute;
     top: 80px;
-    left: 170px;
+    left: 130px;
 }
 
 .username{
@@ -380,7 +380,7 @@ table td span{
     line-height: 14.4px;
     position: absolute;
     top: 50px;
-    left: 170px;
+    left: 130px;
 }
 
 table td#online{
@@ -393,6 +393,7 @@ table td#offline{
 
 table td img{
     float: left;
+    margin-left: -50px;
 }
 
 table td i{
