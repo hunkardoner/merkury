@@ -12,10 +12,24 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="header">
-        <div class="container">
-            <div class="col-md-3">
+			<section class="wrap">
+			  <aside class="side-menu">
+                <div class="logo">
+                    <a href="index.html">
+                      <img src="img/logo.png" alt="">
+                    </a>
+                  </div>
+                    <ul>
+                        <li id="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="workflow.html"><i class="fa fa-tasks" aria-hidden="true"></i>Workflow</a></li>
+                        <li><a href="statistics.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>Statistics</a></li>
+                        <li><a href="calendar.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+                        <li><a href="users.html"><i class="fa fa-user" aria-hidden="true"></i>Users</a></li>
+                        <li><a href="#Settings"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+                    </ul>
+			  </aside>
+			  <div class="main-area">
+				<header class="header">
                 <div class="top-menu">
                     <ul>
                         <li id="left"><i class="fas fa-caret-left"></i></li id="others">
@@ -27,173 +41,166 @@
                         <li id="right"><a href="#add_project" class="add-project" data-toggle="modal" data-target="#add_project">Add Project</a></li>
                     </ul>
                 </div>
-                <div class="side-menu">
+				</header>
+				<main class="content">
+				          <h1>Hello John!</h1>
+        <div class="boss-box">
+                <div class="box">
+                <h2>Your Sales</h2>
+
+                    <div class="period">Period: <b>Last Year</b></div>
+                    
+                    <div class="circle"><div class="circle-text">1560 <br><br><br><br><span>Sales</span></div></div>
                     <ul>
-                        <li><img src="img/logo.png" alt=""></li>
-                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a></li>
-                        <li><i class="fa fa-tasks" aria-hidden="true"></i><a href="workflow.html">Workflow</a></li>
-                        <li><i class="fa fa-bar-chart" aria-hidden="true"></i><a href="statistics.html">Statistics</a></li>
-                        <li><i class="fa fa-calendar" aria-hidden="true"></i><a href="calendar.html">Calendar</a></li>
-                        <li><i class="fa fa-user" aria-hidden="true"></i><a href="users.html">Users</a></li>
-                        <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#Settings">Settings</a></li>
+                        <li>Websites</li>
+                        <li>Logo</li>
+                        <li>Social Media</li>
+                        <li>Adwords</li>
+                        <li>E-Commerce</li>
                     </ul>
                 </div>
-            </div>
+                <div class="box">
+                    <h2>Report</h2>
+        
+                    <div class="period">Period: <b>Last Year</b></div>
+                    
+                    <ul>
+                        <li>700</li>
+                        <li>600</li>
+                        <li>500</li>
+                        <li>400</li>
+                        <li>300</li> 
+                        <li>200</li>
+                        <li>100</li> 
+                    </ul>
+
+                    <div class="grafik"><img src="https://image.prntscr.com/image/85C7jMJTRtyJpxWHUGa9xw.png" alt=""></div>
+                </div>
         </div>
-    </div>
-    <div class="content">
-        <h1>Hello John!</h1>
 
-        <div class="box" id="left-box">
-           <h2>Your Sales</h2>
+        <div class="boss-vector">
+            <div class="vector"><h2>Tasks</h2>
+                <div class="work-circle" id="blue" style="margin-left: 260px;">5</div>
+                <div class="work-circle" id="blue" style="background-color:#f83c7b;">2</div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time" style="color: #f83c7b;"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
 
-            <div class="period">Period: <b>Last Year</b></div>
-            
-            <div class="circle"><div class="circle-text">1560 <br><br><br><br><span>Sales</span></div></div>
-            <ul>
-                <li>Websites</li>
-                <li>Logo</li>
-                <li>Social Media</li>
-                <li>Adwords</li>
-                <li>E-Commerce</li>
-            </ul>
-        </div>
-        <div class="box" id="right-box" style="top: -180px;">
-            <h2>Report</h2>
- 
-             <div class="period">Period: <b>Last Year</b></div>
-             
-             <ul>
-                 <li>700</li>
-                 <li>600</li>
-                 <li>500</li>
-                 <li>400</li>
-                 <li>300</li> 
-                 <li>200</li>
-                 <li>100</li> 
-            </ul>
-
-            <div class="grafik"><img src="https://image.prntscr.com/image/85C7jMJTRtyJpxWHUGa9xw.png" alt=""></div>
-         </div>
-
-        <div class="vector"><h2>Tasks</h2>
-            <div class="work-circle" id="blue" style="margin-left: 260px;">5</div>
-            <div class="work-circle" id="blue" style="background-color:#f83c7b;">2</div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time" style="color: #f83c7b;"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
+                    </div>
                 </div>
-            </div>
-            <div class="work-box" style=" margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">F</div>
-                <div class="work-text">        
-                    Free business PSD Template 
-                    <div class="work-time" style="color: #f83c7b;"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+                <div class="work-box" style=" margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">F</div>
+                    <div class="work-text">        
+                        Free business PSD Template 
+                        <div class="work-time" style="color: #f83c7b;"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
 
+                    </div>
                 </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New logo for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New logo for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
 
+                    </div>
                 </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">F</div>
-                <div class="work-text">        
-                    Free Icons Set vol. 3
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">F</div>
+                    <div class="work-text">        
+                        Free Icons Set vol. 3
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
 
+                    </div>
                 </div>
-            </div>
+            </div>   
+            <div class="vector"><h2>Messages</h2>
+                <div class="work-circle" id="blue">2</div>
+                <div id="active" class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div id="active" class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+            </div>    
+            <div class="vector"><h2>Activity</h2>
+                <div class="work-circle" id="blue">10</div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+                <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
+                    <div class="work-circle">N</div>
+                    <div class="work-text">        
+                        New website for JCD.pl
+                        <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
+                        <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+            </div>    
         </div>   
-        <div class="vector"><h2>Messages</h2>
-            <div class="work-circle" id="blue">2</div>
-            <div id="active" class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
+				</main>
+			  </div>
+			</section>
 
-                </div>
-            </div>
-            <div id="active" class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-        </div>    
-        <div class="vector"><h2>Activity</h2>
-            <div class="work-circle" id="blue">10</div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-            <div class="work-box" style="margin: 0; border-left: 0px; border-right: 0px;">
-                <div class="work-circle">N</div>
-                <div class="work-text">        
-                    New website for JCD.pl
-                    <div class="work-time"> <i class="fas fa-clock" aria-hidden="true"></i> 5 days left</div>
-                    <i class="fas fa-ellipsis-v" style="position: absolute; top: 25px; left: 300px; font-size: 20px; color: grey" aria-hidden="true"></i>
-
-                </div>
-            </div>
-        </div>              
-    </div>
 </body>
 </html>

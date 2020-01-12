@@ -1,46 +1,82 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 1900px;
-    height: 1400px;
     background-color: #f6f7fa;
 }
+
+.main-area {padding: 0 0 0 318px;} 
 
 .header{
     background-color: #ffffff;
 }
 
-.container{
-    position: relative;
-}
-
 .side-menu{
     width: 318px;
-    height: 1321px;
+    height: 100vh;
     background-color: #0e1a35;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     
 }
 
-.side-menu ul{
-    
-    width: 318px;
-    height: 0;
-    background-color: #0e1a35; 
+.side-menu ul #active{
+    background: #122143;
+    border-left: 5px solid #5584ff;
 }
 
 .side-menu ul li{
     list-style-type: none;
-    margin: 36px;
     transition: all;
+    border-left: 5px solid transparent;
 }
 
 .side-menu ul li a{
-    width: 63px;
-    height: 18px;
     color: #ffffff;
     font-family: Roboto;
     font-size: 24px;
@@ -50,6 +86,9 @@ body {
     transition: all;
     border: 0px solid;
     cursor: pointer;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -59,13 +98,8 @@ body {
 }
 
 .top-menu{
-    width: 1400px;
-    height: 120px;
     border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
-    position: absolute;
-    left: 320px;
-    border-left: 0;
 }
 
 .top-menu ul li{
@@ -73,6 +107,7 @@ body {
     margin: 0;
     padding-left: 25px;
     padding-top: 30px;
+	padding-bottom: 30px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -89,74 +124,53 @@ body {
 }
 
 .content{
-    width: 1400px;
-    height: 1200px;
     border: 1px solid rgba(132, 146, 175, 0.3);
-    border-top: 0;
-    position: absolute;
-    left: 320px;
-    top: 121px;
-    border-left: 0;
+    padding: 25px;
 }
 
 .content h1{
-    height: 37px;
     color: #0e1a35;
     font-family: Roboto;
     font-size: 44px;
     font-weight: 500;
-    line-height: 14.4px;
-    margin-left: 43px;
-    margin-top: 50px;
+    margin: 30px;
 }
 
 .box h2{
-    width: 172px;
     color: #8492af;
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 14.4px;
-    padding: 15px 412px 0 0;
-    margin-left: 32px;
+    margin: 30px;
+}
+
+.boss-box{
+    display: flex;
+    margin: 25px 0 0;
 }
 
 .box    {
-    width: 40%  ;
-    height: 469px;
     border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
     position: relative;
-    display: inline-block;
-    margin-left: 43px;
-    box-sizing: border-box;
 }
 
-.box#right-box  {
-    top: -40px;
-    width: 52% ;
-    height: 469px;
-    border: 1px solid rgba(132, 146, 175, 0.3);
-    background-color: #ffffff;
-    position: relative;
-    display: inline-block;
-    margin-left: 43px;
-    box-sizing: border-box;
-}
-
-.bottom-box{
-    height: 464px;
+.box:nth-child(1) {
+    width: 40%;
+  }
+  .box:nth-child(2) {
+    width: 54%;
+    margin: 0 0 0 25px; 
+  }
+  .box#bottom {
     width: 95%;
-    border: 1px solid rgba(132, 146, 175, 0.3);
-    background-color: #ffffff;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: -1333px;
-}
+    padding: 6px;
+  }
+
 
 .box img{
     position: absolute;
-    top: 0px;
+    top: 65px;
 }
 
 .sol-resim{
@@ -215,21 +229,6 @@ body {
     line-height: 24px;
 }
 
-.box#right-box ul li{
-    float: left;
-    position: relative;
-    left: 20px;
-    top: 50px;
-    padding-bottom: 10px;
-    list-style: circle;
-    color: #8492af;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    list-style-type: none;
-}
-
 .add-project{
     background: #5584ff none repeat scroll 0 0;
     border-radius: 100px;
@@ -262,15 +261,15 @@ body {
     margin-bottom: 45px;
     margin-top: 45px;
     }   
-    
+
+
+
 .circle-text{
     text-align: center;
-    position: absolute;
-    top: 250px;
-    left: 130px;
+    vertical-align: center;
 }
 
-.side-menu i{
+.side-menu ul li a i{
     margin-right: 15px;
     color: #5584ff;
     font-size: 20px;
@@ -278,22 +277,32 @@ body {
 
 .grafik{
     position: absolute;
-    top: 140px;
-    left: 90px;
+    top: 128px;
+    left: 140px;
+}
+
+.boss-vector{
+    display: flex;
+    margin: 25px 0 0;
 }
 
 .vector{
-    box-sizing: border-box;
-    width: 403px;
-    height: 560px;
     border: 1px solid rgba(132, 146, 175, 0.3);
     background-color: #ffffff;
-    display: inline-block;
     position: relative;
-    top: -160px;
-    margin-left: 43px;
-    margin-right: 18px;
 }
+
+.vector:nth-child(1) {
+    width: 30%;
+  }
+.vector:nth-child(2) {
+    width: 30%;
+    margin: 0 0 0 45px; 
+  }
+.vector:nth-child(3) {
+    width: 30%;
+    margin: 0 0 0 45px; 
+  }
 
 .vector #active{
     background: #dadee7;
@@ -310,6 +319,7 @@ body {
     font-weight: 600;
     line-height: 48px;
     margin-left: 34px;
+    padding: 20px;
 }
 
 .vector ul li{
@@ -332,16 +342,13 @@ body {
 }
 
 table{
-    position: absolute;
     width: 95%;
     text-align: center;
     border-collapse: collapse;
     left: 20px;
 
 }
-table tr{
-    margin: 30px;
-}
+
 table th{
     color: #8492af;
     font-family: Roboto;
@@ -357,12 +364,9 @@ table td{
     font-family: Roboto;
     font-size: 20px;
     font-weight: 500;
-    line-height: 16.86px;
     background-color: white;
-    margin: 0px;
-    height: 100px;
     position: relative;
-	text-align: center;
+    vertical-align: middle;
 }
 
 table td span{
@@ -429,19 +433,20 @@ table tr td li{
     font-weight: 1000;
     border: 0px;
   }
+
 footer{
-    position: absolute;
     width: 95%;
     text-align: center;
     border-collapse: collapse;
-    bottom: 40px;
+    width: 100%;
 
 }
 
 .workflow{
     box-sizing: border-box;
     display: inline-block;
-    position: relative;;
+    position: relative;
+    width: 30%;
 }
 
 .workflow h1{
@@ -452,7 +457,6 @@ footer{
 }
 
 .work-box  {
-    width: 400px;
     height: 118px;
     background: white;
     margin: 20px 30px;
@@ -578,8 +582,6 @@ footer{
     text-align: center;
     border-radius: 1px;
     padding: 5px 0;
-  
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: 110px;
@@ -589,5 +591,51 @@ footer{
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+ }
 
+ .tooltip ul{
+     display: inline;
+     list-style: none;
+     position: relative;
+ }
+
+ .tooltip ul li{
+    padding: 0;
+    margin: 0;
+    color: #8492af;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+    float: left;
+ }
+
+ .tooltip h3{
+    color: #8492af;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+ }
+
+ .tooltip h2{
+    color: #0e1a35;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 14.4px;
+ }
+
+ .tooltip span{
+    color: #8492af;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.4px;
+ }
+
+ .logo a {display: flex; justify-content: center;}

@@ -12,37 +12,39 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></head>
 <body>
     
-    <div class="header">
-        <div class="container">
-            <div class="col-md-3">
-                <div class="top-menu">
-                    <ul>
-                        <li id="left"><i class="fas fa-caret-left"></i></li id="others">
-                        <li id="left"><i class="fas fa-bars"></i></li id="left">
-                        <li id="left"><i class="fas fa-search"></i></li>
-                        <li id="right"><i class="fas fa-caret-down"></i></li>
-                        <li id="right"><i class="fas fa-bell"></i></li>
-                        <li id="right"><i class="fas fa-envelope"></i></li>
-                        <li id="right"><a href="#add_project" class="add-project" data-toggle="modal" data-target="#add_project">Add Project</a></li>
-                    </ul>
-                </div>
-                <div class="side-menu">
-                    <ul>
-                        <li><img src="img/logo.png" alt=""></li>
-                        <li id="active"><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a></li>
-                        <li><i class="fa fa-tasks" aria-hidden="true"></i><a href="workflow.html">Workflow</a></li>
-                        <li><i class="fa fa-bar-chart" aria-hidden="true"></i><a href="statistics.html">Statistics</a></li>
-                        <li><i class="fa fa-calendar" aria-hidden="true"></i><a href="calendar.html">Calendar</a></li>
-                        <li><i class="fa fa-user" aria-hidden="true"></i><a href="users.html">Users</a></li>
-                        <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#Settings">Settings</a></li>
-                    </ul>
-                </div>
+    <section class="wrap">
+        <aside class="side-menu">
+          <div class="logo">
+              <a href="index.html">
+                <img src="img/logo.png" alt="">
+              </a>
             </div>
-        </div>
-    </div>
-    <div class="content">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="workflow.html"><i class="fa fa-tasks" aria-hidden="true"></i>Workflow</a></li>
+                <li><a href="statistics.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>Statistics</a></li>
+                <li><a href="calendar.html"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+                <li id="active"><a href="users.html"><i class="fa fa-user" aria-hidden="true"></i>Users</a></li id="active">
+                <li><a href="#Settings"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+            </ul>
+        </aside>
+        <div class="main-area">
+          <header class="header">
+          <div class="top-menu">
+                <ul>
+                <li id="left"><i class="fas fa-caret-left"></i></li id="others">
+                  <li id="left"><i class="fas fa-bars"></i></li id="left">
+                  <li id="left"><i class="fas fa-search"></i></li>
+                  <li id="right"><i class="fas fa-caret-down"></i></li>
+                  <li id="right"><i class="fas fa-bell"></i></li>
+                  <li id="right"><i class="fas fa-envelope"></i></li>
+                  <li id="right"><a href="#add_project" class="add-project" data-toggle="modal" data-target="#add_project">Add Project</a></li>
+              </ul>
+          </div>
+          </header>
+          <main class="content">  
     <h1>Users (128)</h1>
-    <div class="period" style="margin-right: 50px;">Sort: <b>Active first</b></div>
+    <div class="period" style="margin-right: 50px; top: 135px;">Sort: <b>Active first</b></div>
     <table>
         <tr>
             <th>Name</th>
@@ -85,7 +87,8 @@
         </div>
     </footer>
 
-    </div>
-
+</main>
+</div>
+</section>
 </body>
 </html>
